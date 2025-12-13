@@ -5,7 +5,7 @@ house = House(
     area=120,
     rooms=5,
     price=850000,
-    address="Warsaw, Marszalkowska Street 5",
+    address="Krakow, Grodzka 5",
     plot=600
 )
 
@@ -13,7 +13,7 @@ flat = Flat(
     area=55,
     rooms=2,
     price=420000,
-    address="Krakow, Old Town 12",
+    address="Krakow, Basztowa 12",
     floor=3
 )
 
