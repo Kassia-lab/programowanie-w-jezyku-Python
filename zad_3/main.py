@@ -6,7 +6,7 @@ house = House(
     rooms=5,
     price=850000,
     address="Krakow, Grodzka 5",
-    plot=600
+    plot=600,
 )
 
 flat = Flat(
@@ -14,7 +14,7 @@ flat = Flat(
     rooms=2,
     price=420000,
     address="Krakow, Basztowa 12",
-    floor=3
+    floor=3,
 )
 
 print(house)
