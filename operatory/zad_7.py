@@ -1,6 +1,7 @@
 from typing import List
 import requests
 
+
 class Brewery:
     def __init__(
         self,
@@ -27,10 +28,12 @@ class Brewery:
         self.website_url = website_url
 
     def __str__(self):
-        return (f"Brewery '{self.name}' ({self.brewery_type})\n"
-                f"Address: {self.street}, {self.city}, {self.state}, {self.postal_code}, {self.country}\n"
-                f"Phone: {self.phone}\n"
-                f"Website: {self.website_url}\n")
+        return (
+            f"Brewery '{self.name}' ({self.brewery_type})\n"
+            f"Address: {self.street}, {self.city}, {self.state}, "
+            f"{self.postal_code}, {self.country}\n"
+            f"Phone: {self.phone}\n"
+            f"Website: {self.website_url}\n")
 
 
 def get_breweries_from_api() -> list:

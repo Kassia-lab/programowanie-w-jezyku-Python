@@ -6,4 +6,6 @@ def przetworz_listy(lista1, lista2):
 
 
 wynik = przetworz_listy([1, 2, 3], [2, 3, 4])
+
+
 print(wynik)

@@ -32,7 +32,8 @@ class Brewery:
 
     def __str__(self):
         return (f"Brewery '{self.name}' ({self.brewery_type})\n"
-                f"Address: {self.street}, {self.city}, {self.state}, {self.postal_code}, {self.country}\n"
+                f"Address: {self.street}, {self.city}, {self.state}, "
+                f"{self.postal_code}, {self.country}\n"
                 f"Phone: {self.phone}\n"
                 f"Website: {self.website_url}\n")
 
@@ -62,8 +63,14 @@ def brewery_factory(breweries: list) -> List[Brewery]:
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description='Display breweries, optionally filtered by city.')
-    parser.add_argument('-c', '--city', help='Filter breweries by city', required=False)
+    parser = argparse.ArgumentParser(
+        description='Display breweries, optionally filtered by city.'
+    )
+    parser.add_argument(
+        '-c', '--city',
+        help='Filter breweries by city',
+        required=False
+    )
     return vars(parser.parse_args())
 
 
