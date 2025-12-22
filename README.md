@@ -1,1 +1,1 @@
-# programowanie-w-jezyku-Python
+# programowanie-w-jezyku-Python - Katarzyna Bojko
